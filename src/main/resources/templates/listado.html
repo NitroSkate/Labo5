@@ -23,5 +23,9 @@
 				</tr>
 			</th:block>
 	</table>
+	<form th:action= "@{/rlistado}" th:object="${id}" method= "post">
+		<label>Ingrese el codigo del usuario:</label><input type="text" th:field="*{cUsuario}"><br>
+		<input type="submit" value="borrar">
+	</form>
 </body>
 </html>
